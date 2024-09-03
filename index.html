@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Eventos em Javascript</title>
+    <style>
+        #meubotao {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+   <h1 id="titulo">Clique na botão</h1>
+   <button id="meubotao">Clique aqui</button>
+
+   <script>
+
+        const botao = document.getElementById('meubotao');
+
+        botao.addEventListener('click', function() {
+
+            document.getElementById('titulo').innerText = 'Você clicou no botão';
+        });
+   </script>
+
+</body>
+</html>
